@@ -1,5 +1,7 @@
 # Zuber
 
+*Este foi um projeto com duas etapas, a primeira eu tive que obter e trasnformar dados usando sql na própria plataforma de ensino e a segunda usei python para testar as hipóteses
+
 Sou aluno da TripleTen no curso de Ciência de Dados, estou divulgando projetos que desenvolvi para meu portifólio. Este é o sexto projeto.
 
 Você está trabalhando como analista da Zuber, uma nova empresa de compartilhamento de caronas que está sendo lançada em Chicago. Sua tarefa é encontrar padrões nas informações disponíveis. Você quer entender as preferências dos passageiros e o impacto de fatores externos nas corridas.
@@ -48,4 +50,8 @@ project_sql_result_04.csv.
 
 Teste a hipótese: "A duração média dos passeios do Loop para o Aeroporto Internacional O'Hare muda nos sábados chuvosos."
 
-*Este foi um projeto com duas etapas, a primeira eu tive que obter e trasnformar dados usando sql na própria plataforma de ensino e a segunda usei python para testar as hipóteses
+**Conclusão**
+As preferências dos passageiros são:
+1- Loop 2- River North 3- Streeterville 4- West Loop 5- O'Hare 6- Lake View 7- Grant Park 8- Museum Campus 9- Gold Coast 10- Sheffield & DePaul
+
+Fatores externam impactam sim, tanto no tempo de duração das viagens (comprovado no teste estatístico), quanto no número de corridas (diferença de linhas do dataframe filtrado pelo tempo bom (888) com o tempo ruim (180). Com um total de 708 corridas a mais em dias com o clima bom).
