@@ -7,6 +7,32 @@ Trabalhando com um banco de dados, você analisará dados de concorrentes e test
 
 *Este foi um projeto com duas etapas, a primeira eu tive que obter e trasnformar dados usando sql na própria plataforma de ensino e a segunda usei python para testar as hipóteses
 
+(SQL)
+**Descrição dos dados**
+Um banco de dados com informações sobre corridas de táxi em Chicago:
+* tabela neighborhoods: dados sobre os bairros da cidade
+* name: nome do bairro
+* neighborhood_id: código do bairro
+* tabela cabs: dados sobre os táxis
+* cab_id: código do veículo
+* vehicle_id: a identificação técnica do veículo
+* company_name: a empresa proprietária do veículo
+* tabela trips: dados sobre corridas
+* trip_id: código da corrida
+* cab_id: código do veículo que opera a corrida
+* start_ts: data e hora do início da corrida (tempo arredondado para a hora)
+* end_ts: data e hora do final da corrida (tempo arredondado para a hora)
+* duration_seconds: duração da corrida em segundos
+* distance_miles: distância percorrida em milhas
+* pickup_location_id: código do bairro de retirada
+* dropoff_location_id: código do bairro de entrega
+* tabela weather_records: dados sobre o clima
+* record_id: código de registro meteorológico
+* ts: grava data e hora (tempo arredondado para a hora)
+* temperature: temperatura quando o registro foi feito
+* description: breve descrição das condições meteorológicas, ex. "chuva leve" ou "nuvens esparsas"
+
+(python)
 Agora você tem estes dois CSVs:
 project_sql_result_01.csv. 
 
