@@ -1,16 +1,15 @@
 # Zuber
 
-*Este foi um projeto com duas etapas, a primeira eu tive que obter e trasnformar dados usando sql na própria plataforma de ensino e a segunda usei python para testar as hipóteses
+*Este foi um projeto com duas etapas, a primeira eu tive que obter e transformar dados usando sql na própria plataforma de ensino e a segunda usei python para testar as hipóteses
 
 Sou aluno da TripleTen no curso de Ciência de Dados, estou divulgando projetos que desenvolvi para meu portifólio. Este é o sexto projeto.
 
-Você está trabalhando como analista da Zuber, uma nova empresa de compartilhamento de caronas que está sendo lançada em Chicago. Sua tarefa é encontrar padrões nas informações disponíveis. Você quer entender as preferências dos passageiros e o impacto de fatores externos nas corridas.
-Trabalhando com um banco de dados, você analisará dados de concorrentes e testará uma hipótese sobre o impacto do clima na frequência das viagens.
+Neste projeto analisei a Zuber, uma nova empresa de compartilhamento de caronas que está sendo lançada em Chicago. Minha tarefa é encontrar padrões nas informações disponíveis. Entender as preferências dos passageiros e o impacto de fatores externos nas corridas.
+Trabalhando com um banco de dados, analisei dados de concorrentes e testei uma hipótese sobre o impacto do clima na frequência das viagens.
 
-*Este foi um projeto com duas etapas, a primeira eu tive que obter e trasnformar dados usando sql na própria plataforma de ensino e a segunda usei python para testar as hipóteses
 
-(SQL)
-**Descrição dos dados**
+**Descrição dos dados (SQL)**
+
 Um banco de dados com informações sobre corridas de táxi em Chicago:
 * tabela neighborhoods: dados sobre os bairros da cidade
 * name: nome do bairro
