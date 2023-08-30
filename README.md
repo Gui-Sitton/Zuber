@@ -4,6 +4,8 @@ In this project I analyzed Zuber, a new ride-sharing company being launched in C
 Working with a database, I analyzed data from competitors and tested a hypothesis about the impact of weather on trip frequency.
 
 
+*The SQL part was made in the tripleten plataform, but the tasks and codes are in the SQL code parte in the files*
+
 **Data description (SQL)**
 
 A database with information on cab rides in Chicago:
