@@ -1,6 +1,6 @@
-tarefa1: Escreva um código para analisar os dados sobre o clima em Chicago em novembro de 2017 no site:
+task1: Write a code to analyze the data about the weather in Chicago in November 2017 on the website:
 [https://practicum-content.s3.us-west-1.amazonaws.com/data-analyst-eng/moved_chicago_weather_2017.html)
-O nome do DataFrame deve ser weather_records e deve ser especificado ao pesquisar: attrs={"id": "weather_records"} . Imprima o DataFrame em sua totalidade.
+The name of the DataFrame must be weather_records and must be specified when searching: attrs={"id":"weather_records"} . Print the DataFrame in its entirety.
 
 
 import pandas as pd
@@ -22,7 +22,7 @@ print(weather_records)
 
 
 
-tarefa2: Imprima o campo company_name. Encontre o número de corridas de táxi para cada empresa de táxi de 15 a 16 de novembro de 2017, nomeie o campo resultante como trips_amount e imprima-o também. Classifique os resultados pelo campo trips_amount em ordem decrescente.
+task2: Print the company_name field. Find the number of cab rides for each cab company from November 15 to 16, 2017, name the resulting field trips_amount and print it as well. Sort the results by the trips_amount field in descending order.
 SELECT 
 	cabs.company_name AS company_name,
     COUNT(trips.trip_id) AS trips_amount
@@ -39,7 +39,7 @@ ORDER BY
 
 
 
-tarefa3: Encontre o número de corridas para cada empresa de táxi cujo nome contém as palavras "Amarelo" ou "Azul" de 1 a 7 de novembro de 2017. Nomeie a variável resultante como trips_amount. Agrupe os resultados pelo campo company_name.
+task3: Find the number of rides for each cab company whose name contains the words "Yellow" or "Blue" from November 1 to 7, 2017. Name the resulting variable trips_amount. Group the results by the company_name field.
 SELECT
     cabs.company_name as company_name,
     COUNT(trips.trip_id) AS trips_amount
@@ -69,8 +69,8 @@ WHERE
 GROUP BY company_name;
 
 
-tarefa4:
-De 1 a 7 de novembro de 2017, as empresas de táxi mais populares foram Flash Cab e Taxi Affiliation Services. Encontre o número de corridas para essas duas empresas e nomeie a variável resultante como trips_amount. Junte as corridas de todas as outras empresas no grupo "Outros". Agrupe os dados por nomes de empresas de táxi. Nomeie o campo com os nomes das empresas de táxi company. Ordene o resultado em ordem decrescente por trips_amount.
+task4:
+From November 1 to November 7, 2017, the most popular cab companies were Flash Cab and Taxi Affiliation Services. Find the number of rides for these two companies and name the resulting variable trips_amount. Add the rides for all the other companies in the "Others" group. Group the data by cab company names. Name the field with the names of the cab companies. Sort the result in descending order by trips_amount.
 SELECT
     CASE 
         WHEN company_name = 'Flash Cab' THEN 'Flash Cab' 
@@ -93,7 +93,7 @@ ORDER BY
 
 
 
-tarefa5: Recupere os identificadores dos bairros O'Hare e Loop da tabela neighborhoods.
+task5: Retrieve the identifiers of the O'Hare and Loop neighborhoods from the neighborhoods table.
 SELECT
     neighborhood_id,
     name
@@ -105,8 +105,8 @@ WHERE
 
 
 
-tarefa6: 
-Para cada hora, recupere os registros de condições climáticas da tabela weather_records. Usando o operador CASE, divida todas as horas em dois grupos: Bad se o campo descrição contiver as palavras rain ou storm e Good para outros. Nomeie o campo resultante como weather_conditions. A tabela final deve incluir dois campos: data e hora (ts) e weather_conditions.
+task6: 
+For each hour, retrieve the weather condition records from the weather_records table. Using the CASE operator, divide all the hours into two groups: Bad if the description field contains the words rain or storm and Good for others. Name the resulting field weather_conditions. The final table should include two fields: date and time (ts) and weather_conditions.
 
 SELECT
     ts,
@@ -120,8 +120,8 @@ FROM
 
 
 
-tarefa7: Recupere da tabela trips todas as corridas que começaram no Loop (pickup_location_id: 50) em um sábado e terminaram em O'Hare (dropoff_location_id: 63). Obtenha as condições meteorológicas para cada corrida. Use o método que você aplicou na tarefa anterior. Além disso, recupere a duração de cada corrida. Ignore corridas para as quais os dados sobre as condições meteorológicas não estão disponíveis.
-As colunas da tabela devem estar na seguinte ordem:
+task7: Retrieve from the trips table all the races that started at Loop (pickup_location_id: 50) on a Saturday and finished at O'Hare (dropoff_location_id: 63). Get the weather conditions for each race. Use the method you applied in the previous task. Also, retrieve the duration of each race. Ignore races for which weather data is not available.
+The columns in the table should be in the following order:
 start_ts
 weather_conditions
 duration_seconds
